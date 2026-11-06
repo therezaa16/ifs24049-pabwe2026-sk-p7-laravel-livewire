@@ -90,7 +90,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h3 class="text-sm font-bold text-slate-800">Tambahkan Cover Gambar untuk Stock Ini</h3>
+                <h2 class="text-sm font-bold text-slate-800">Tambahkan Cover Gambar untuk Stock Ini</h2>
                 <p class="text-xs text-slate-600 mt-1 max-w-sm">Mendukung format gambar PNG, JPG, GIF hingga ukuran 5MB untuk visualisasi barang.</p>
                 
                 <button type="button" onclick="document.getElementById('coverPhotoInput').click()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center space-x-1.5">
@@ -197,7 +197,7 @@
             <div class="bg-white rounded-2xl max-w-2xl w-full shadow-2xl border border-slate-200 max-h-[90vh] overflow-hidden flex flex-col">
                 <div class="flex items-center justify-between px-6 py-4 bg-blue-600">
                     <div>
-                        <h3 class="text-lg font-bold text-white">Ubah Data Stock</h3>
+                        <h2 class="text-lg font-bold text-white">Ubah Data Stock</h2>
                         <p class="text-xs text-blue-100">Edit nama, SKU, quantity, harga, status, dan deskripsi barang</p>
                     </div>
                     <button type="button" @click="show = false; $wire.closeEditModal()" class="text-white/80 hover:text-white transition">
@@ -327,7 +327,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-base font-bold text-white">Konfirmasi Hapus Stock</h3>
+                        <h2 class="text-base font-bold text-white">Konfirmasi Hapus Stock</h2>
                         <p class="text-xs text-rose-100">Tindakan ini tidak dapat dibatalkan</p>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-base font-bold text-white">Konfirmasi Hapus Cover</h3>
+                        <h2 class="text-base font-bold text-white">Konfirmasi Hapus Cover</h2>
                         <p class="text-xs text-rose-100">Gambar cover akan dihapus dari stock ini</p>
                     </div>
                 </div>

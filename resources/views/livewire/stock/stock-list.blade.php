@@ -265,9 +265,9 @@
             class="modal-scroll-lock fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overscroll-contain p-4 bg-slate-900/50 backdrop-blur-sm">
             <div class="bg-white rounded-2xl max-w-2xl w-full shadow-xl border border-slate-200 max-h-[90vh] overflow-hidden flex flex-col">
                 <div class="flex items-center justify-between px-6 py-4 bg-blue-600">
-                    <h3 class="text-lg font-bold text-white">
+                    <h2 class="text-lg font-bold text-white">
                         {{ $editingStockId ? 'Edit Stock' : 'Tambah Stock Baru' }}
-                    </h3>
+                    </h2>
                     <button type="button" @click="show = false; $wire.closeFormModal()" class="text-white/80 hover:text-white transition">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -414,7 +414,7 @@
             class="modal-scroll-lock fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overscroll-contain p-4 bg-slate-900/50 backdrop-blur-sm">
             <div class="bg-white rounded-2xl max-w-md w-full shadow-xl border border-slate-200 overflow-hidden flex flex-col">
                 <div class="flex items-center justify-between px-6 py-4 bg-emerald-600">
-                    <h3 class="text-lg font-bold text-white">Import Stock dari File Excel</h3>
+                    <h2 class="text-lg font-bold text-white">Import Stock dari File Excel</h2>
                     <button type="button" @click="show = false; $wire.closeImportModal()" class="text-white/80 hover:text-white transition">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -483,7 +483,7 @@
                             </svg>
                         </span>
                         <div>
-                            <h3 class="text-lg font-bold text-white">Generate Item Stok dengan AI</h3>
+                            <h2 class="text-lg font-bold text-white">Generate Item Stok dengan AI</h2>
                             <p class="text-xs text-purple-100">Minta AI membuatkan beberapa item stok terstruktur sesuai
                                 kebutuhan Anda</p>
                         </div>
@@ -561,7 +561,7 @@
                     <!-- AI Preview Results -->
                     @if (!empty($aiGeneratedItems))
                         <div class="pt-4 border-t border-slate-200">
-                            <h4 class="text-sm font-bold text-slate-800 mb-2">Pilih Stock yang ingin ditambahkan:</h4>
+                            <h3 class="text-sm font-bold text-slate-800 mb-2">Pilih Stock yang ingin ditambahkan:</h3>
                             <div class="space-y-2 max-h-60 overflow-y-auto">
                                 @foreach ($aiGeneratedItems as $index => $item)
                                     <label
@@ -627,7 +627,7 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-base font-bold text-white">Konfirmasi Hapus Stock</h3>
+                        <h2 class="text-base font-bold text-white">Konfirmasi Hapus Stock</h2>
                         <p class="text-xs text-rose-100">Tindakan ini tidak dapat dibatalkan</p>
                     </div>
                 </div>
