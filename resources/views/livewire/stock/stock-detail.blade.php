@@ -47,7 +47,7 @@
             </div>
 
             <!-- Delete Button -->
-            <button wire:click="confirmDeleteStock" wire:loading.attr="disabled" class="inline-flex items-center space-x-1 px-3 py-2 bg-rose-50 hover:bg-rose-100 text-rose-600 border border-rose-200 text-xs font-semibold rounded-lg transition disabled:opacity-75">
+            <button wire:click="confirmDeleteStock" wire:loading.attr="disabled" class="inline-flex items-center space-x-1 px-3 py-2 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-semibold rounded-lg transition disabled:opacity-75">
                 <svg wire:loading.remove wire:target="confirmDeleteStock" class="w-4 h-4 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
@@ -91,7 +91,7 @@
                     </svg>
                 </div>
                 <h3 class="text-sm font-bold text-slate-800">Tambahkan Cover Gambar untuk Stock Ini</h3>
-                <p class="text-xs text-slate-400 mt-1 max-w-sm">Mendukung format gambar PNG, JPG, GIF hingga ukuran 5MB untuk visualisasi barang.</p>
+                <p class="text-xs text-slate-600 mt-1 max-w-sm">Mendukung format gambar PNG, JPG, GIF hingga ukuran 5MB untuk visualisasi barang.</p>
                 
                 <button type="button" onclick="document.getElementById('coverPhotoInput').click()" class="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-sm transition flex items-center space-x-1.5">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
@@ -137,7 +137,7 @@
             </div>
 
             <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
-                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Terakhir Diperbarui</span>
+                <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider block mb-1">Terakhir Diperbarui</span>
                 <div class="text-sm font-semibold text-slate-800">
                     {{ $stock->updated_at ? $stock->updated_at->format('d M Y H:i') : '-' }}
                 </div>
@@ -175,10 +175,10 @@
                     <div x-ref="viewerContainer"></div>
                 </div>
             @else
-                <div class="py-12 text-center text-slate-400">
+                <div class="py-12 text-center text-slate-600">
                     <svg class="w-10 h-10 mx-auto mb-2 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                     <p class="text-sm font-medium text-slate-600">Belum ada deskripsi untuk stock ini</p>
-                    <p class="text-xs text-slate-400 mt-1">Tambahkan catatan, langkah kerja, atau daftar checklist dengan Toast UI Editor.</p>
+                    <p class="text-xs text-slate-600 mt-1">Tambahkan catatan, langkah kerja, atau daftar checklist dengan Toast UI Editor.</p>
                     <button wire:click="openEditModal" class="mt-4 px-3.5 py-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition">
                         + Tambahkan Deskripsi Sekarang
                     </button>
@@ -257,7 +257,7 @@
                         <div>
                             <div class="flex items-center justify-between mb-1">
                                 <label class="block text-sm font-semibold text-slate-800">Deskripsi Stock (Toast UI Editor)</label>
-                                <span class="text-xs text-slate-400">Markdown & WYSIWYG</span>
+                                <span class="text-xs text-slate-600">Markdown & WYSIWYG</span>
                             </div>
 
                             <div wire:ignore
